@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Veautiful Demo</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container-fluid">
+
+    <h1>A boids experiment</h1>
+
+    <p>
+        Boids ("bird-oids") is a simulation of flocking introduced in a paper by Craig Reynolds in 1987. It's an
+        <em>agent-based model</em> where the computer simulates each individual bird using some simple rules,
+        producing a complex flocking behaviour.
+    </p>
+    <p>
+        The three rules are:
+    </p>
+    <ul>
+        <li>Birds will try to face in the same direction as birds near them, so they can move as a flock</li>
+        <li>They'll try to keep a separation distance from each other, so they don't fly into each other</li>
+        <li>They'll try to keep as close as they can to the middle of the flock, so they don't fly off alone</li>
+    </ul>
+    <p>
+        In this experiment, you're going to play with how strong these different rules are to see what happens to the flock.
+    </p>
+
+    <div id="render-here">
+        <p>Loading. This site has been tested with Chrome, Safari, and Firefox.</p>
+    </div>
+</div>
+
+<!-- Include Scala.js compiled code -->
+<script type="text/javascript" src="./target/scala-2.12/a-veautiful-demo-opt.js"></script>
+
+</body>
+</html>
